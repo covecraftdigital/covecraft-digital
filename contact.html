@@ -807,6 +807,24 @@ footer {
 .ty-steps { text-align: left; border: 1px solid var(--border); border-radius: 10px; padding: 24px 26px; margin-bottom: 32px; background: var(--gray-50); }
 .ty-steps li { font-size: 13.5px; color: var(--text-mid); line-height: 1.9; }
 
+/* ── CALC BANNER ── */
+.calc-banner { padding: 0 0 88px; }
+.calc-banner-inner {
+  background: var(--blue-faint);
+  border: 1px solid rgba(0,127,255,0.2);
+  border-radius: 14px;
+  padding: 40px 44px;
+  display: flex; align-items: center; justify-content: space-between; gap: 32px;
+}
+.calc-banner-text { max-width: 560px; }
+.calc-banner-title { font-size: clamp(20px,2.6vw,26px); font-weight: 700; color: var(--text); letter-spacing: -0.015em; line-height: 1.2; margin: 10px 0 8px; }
+.calc-banner-body { font-size: 14px; line-height: 1.65; color: var(--text-mid); font-weight: 400; }
+.calc-banner-btn { flex-shrink: 0; white-space: nowrap; }
+
+@media(max-width:720px){
+  .calc-banner-inner { flex-direction: column; align-items: flex-start; padding: 28px 24px; }
+  .calc-banner-btn { width: 100%; text-align: center; }
+}
 /* ── CITY PAGE EXTRAS ── */
 .city-facts { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
 .city-fact {
@@ -860,10 +878,6 @@ footer {
       <div class="sr">
         <h2 class="contact-info-title">Let's talk.</h2>
         <p class="contact-info-body">If you'd rather just call, that works too — same person answers.</p>
-        <div class="response-badge">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="7.5" stroke="currentColor" stroke-width="1.4"/><path d="M9 5v4l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-          We respond to every inquiry within 1 hour during business hours (Mon–Fri, 8am–6pm ET). Message us after hours and we'll get back to you first thing the next business day.
-        </div>
         <div class="contact-detail">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M2 2h4l1.5 3.5-2 1.5a9 9 0 004.5 4.5l1.5-2 3.5 1.5v4a1 1 0 01-1 1A13 13 0 011 3a1 1 0 011-1z" stroke="var(--blue)" stroke-width="1.3" stroke-linejoin="round"/></svg>
           <a href="tel:7033996654">(703) 399-6654</a>
@@ -878,7 +892,7 @@ footer {
         </div>
       </div>
       <div class="sr d1">
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Free website preview request form">
+        <form id="preview-form" action="https://script.google.com/macros/s/YOUR_APPS_SCRIPT_ID/exec" method="POST" aria-label="Free website preview request form">
           <div class="form-row">
             <div class="form-field"><label class="form-label" for="f-name">Name</label><input id="f-name" type="text" name="name" placeholder="James Mitchell" autocomplete="name" required></div>
             <div class="form-field"><label class="form-label" for="f-phone">Phone</label><input id="f-phone" type="tel" name="phone" placeholder="(703) 000-0000" autocomplete="tel" required></div>
@@ -887,33 +901,29 @@ footer {
             <div class="form-field"><label class="form-label" for="f-business">Business name</label><input id="f-business" type="text" name="business" placeholder="Mitchell Roofing LLC" autocomplete="organization"></div>
             <div class="form-field"><label class="form-label" for="f-email">Email</label><input id="f-email" type="email" name="email" placeholder="james@mitchellroofing.com" autocomplete="email" required></div>
           </div>
-          <div class="form-row">
-            <div class="form-field"><label class="form-label" for="f-trade">Trade</label>
-              <select id="f-trade" name="trade">
-                <option value="" disabled selected>Your trade</option>
-                <option>General Contractor</option><option>Roofing</option>
-                <option>HVAC</option><option>Painting</option>
-                <option>Landscaping / Paving</option><option>Plumbing</option>
-                <option>Electrical</option><option>Other</option>
-              </select>
-            </div>
-            <div class="form-field"><label class="form-label" for="f-county">County</label>
-              <select id="f-county" name="county">
-                <option value="" disabled selected>Your county</option>
-                <option>Prince William County</option><option>Fairfax County</option>
-                <option>Loudoun County</option><option>Multiple</option><option>Other</option>
-              </select>
-            </div>
-          </div>
           <div class="form-field"><label class="form-label" for="f-message">Anything else</label><textarea id="f-message" name="message" placeholder="Current website if you have one, main services, anything specific you want included..."></textarea></div>
-          <input type="hidden" name="_redirect" value="https://covecraftdigital.com/thank-you.html">
           <button class="form-submit" type="submit">Request my free preview</button>
-          <p class="form-note">No payment required. We'll have your preview ready within 24 hours, and we respond to every inquiry within 1 hour.</p>
+          <p class="form-note" id="form-status">No payment required. We'll have your preview ready within 24 hours, and we respond to every inquiry within 1 hour.</p>
         </form>
       </div>
     </div>
   </div>
 </section>
+
+<section class="section calc-banner">
+  <div class="container">
+    <div class="calc-banner-inner sr">
+      <div class="calc-banner-text">
+        <span class="section-header-label">Not ready to send this yet?</span>
+        <h2 class="calc-banner-title">See what your current website is costing you first.</h2>
+        <p class="calc-banner-body">60 seconds, 3 questions — you'll get a real revenue number before you ever talk to us.</p>
+      </div>
+      <a class="btn-solid calc-banner-btn" href="https://covecraftdigital.github.io/covecraft-loss-calculator/" target="_blank" rel="noopener">Run the numbers →</a>
+    </div>
+  </div>
+</section>
+
+
 <footer>
   <div class="foot-grid">
     <div>
@@ -990,5 +1000,27 @@ function initSR() {
 document.addEventListener('DOMContentLoaded', initSR);
 </script>
 
+<script>
+(function() {
+  const form = document.getElementById('preview-form');
+  if (!form) return;
+  const status = document.getElementById('form-status');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = form.querySelector('.form-submit');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    const data = new FormData(form);
+    fetch(form.action, { method: 'POST', mode: 'no-cors', body: data })
+      .then(function() { window.location.href = 'thank-you.html'; })
+      .catch(function() {
+        btn.disabled = false;
+        btn.textContent = 'Request my free preview';
+        status.textContent = "Something went wrong sending that — please call us directly at (703) 399-6654.";
+        status.style.color = '#C0392B';
+      });
+  });
+})();
+</script>
 </body>
 </html>

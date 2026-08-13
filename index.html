@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -808,6 +808,24 @@ footer {
 .ty-steps { text-align: left; border: 1px solid var(--border); border-radius: 10px; padding: 24px 26px; margin-bottom: 32px; background: var(--gray-50); }
 .ty-steps li { font-size: 13.5px; color: var(--text-mid); line-height: 1.9; }
 
+/* ── CALC BANNER ── */
+.calc-banner { padding: 0 0 88px; }
+.calc-banner-inner {
+  background: var(--blue-faint);
+  border: 1px solid rgba(0,127,255,0.2);
+  border-radius: 14px;
+  padding: 40px 44px;
+  display: flex; align-items: center; justify-content: space-between; gap: 32px;
+}
+.calc-banner-text { max-width: 560px; }
+.calc-banner-title { font-size: clamp(20px,2.6vw,26px); font-weight: 700; color: var(--text); letter-spacing: -0.015em; line-height: 1.2; margin: 10px 0 8px; }
+.calc-banner-body { font-size: 14px; line-height: 1.65; color: var(--text-mid); font-weight: 400; }
+.calc-banner-btn { flex-shrink: 0; white-space: nowrap; }
+
+@media(max-width:720px){
+  .calc-banner-inner { flex-direction: column; align-items: flex-start; padding: 28px 24px; }
+  .calc-banner-btn { width: 100%; text-align: center; }
+}
 /* ── CITY PAGE EXTRAS ── */
 .city-facts { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
 .city-fact {
@@ -824,12 +842,12 @@ footer {
 <nav id="main-nav" aria-label="Primary">
   <a class="nav-brand" href="index.html"><img src="assets/logo.png" alt="Covecraft Digital" class="nav-logo"></a>
   <ul class="nav-links">
-<li><a href="/" class="active" aria-current="page">Home</a></li>
-<li><a href="/services.html">Services</a></li>
-<li><a href="/areas.html">Service Areas</a></li>
-<li><a href="/pricing.html">Pricing</a></li>
-<li><a href="/about.html">About</a></li>
-<li><a href="/faq.html">FAQ</a></li>
+    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="areas.html">Service Areas</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
   </ul>
   <a class="nav-btn" href="contact.html">Get free preview</a>
   <button class="nav-tog" onclick="toggleMob()" aria-label="Open menu" aria-expanded="false" aria-controls="mob-menu">
@@ -1075,6 +1093,20 @@ footer {
     </div>
   </div>
 </section>
+
+<section class="section calc-banner">
+  <div class="container">
+    <div class="calc-banner-inner sr">
+      <div class="calc-banner-text">
+        <span class="section-header-label">Still on the fence?</span>
+        <h2 class="calc-banner-title">Find out what your website is costing you.</h2>
+        <p class="calc-banner-body">3 quick questions, 60 seconds — see the exact revenue you're leaving on the table without a real website and local SEO.</p>
+      </div>
+      <a class="btn-solid calc-banner-btn" href="https://covecraftdigital.github.io/covecraft-loss-calculator/" target="_blank" rel="noopener">See what it's costing you →</a>
+    </div>
+  </div>
+</section>
+
 
 <section class="section">
   <div class="container">

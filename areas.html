@@ -814,6 +814,24 @@ footer {
 .ty-steps { text-align: left; border: 1px solid var(--border); border-radius: 10px; padding: 24px 26px; margin-bottom: 32px; background: var(--gray-50); }
 .ty-steps li { font-size: 13.5px; color: var(--text-mid); line-height: 1.9; }
 
+/* ── CALC BANNER ── */
+.calc-banner { padding: 0 0 88px; }
+.calc-banner-inner {
+  background: var(--blue-faint);
+  border: 1px solid rgba(0,127,255,0.2);
+  border-radius: 14px;
+  padding: 40px 44px;
+  display: flex; align-items: center; justify-content: space-between; gap: 32px;
+}
+.calc-banner-text { max-width: 560px; }
+.calc-banner-title { font-size: clamp(20px,2.6vw,26px); font-weight: 700; color: var(--text); letter-spacing: -0.015em; line-height: 1.2; margin: 10px 0 8px; }
+.calc-banner-body { font-size: 14px; line-height: 1.65; color: var(--text-mid); font-weight: 400; }
+.calc-banner-btn { flex-shrink: 0; white-space: nowrap; }
+
+@media(max-width:720px){
+  .calc-banner-inner { flex-direction: column; align-items: flex-start; padding: 28px 24px; }
+  .calc-banner-btn { width: 100%; text-align: center; }
+}
 /* ── CITY PAGE EXTRAS ── */
 .city-facts { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
 .city-fact {
