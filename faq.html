@@ -482,13 +482,13 @@ nav.stuck { border-bottom-color: var(--border); }
 
 @media(max-width:860px){ .pricing-grid{grid-template-columns:1fr;} }
 
-/* Featured price card text overrides */
-.price-card.featured .price-features li { color: rgba(255,255,255,0.85); }
-.price-card.featured .price-amount { color: var(--white); }
-.price-card.featured .price-period { color: rgba(255,255,255,0.8); }
-.price-card.featured .pf-dot { background: rgba(255,255,255,0.7); }
-.price-card.featured .price-cta-solid { background: var(--white); color: var(--blue); }
-.price-card.featured .price-cta-solid:hover { background: var(--gray-50); }
+/* Featured price card text overrides — light background, so use dark text for contrast */
+.price-card.featured .price-features li { color: var(--text-mid); }
+.price-card.featured .price-amount { color: var(--text); }
+.price-card.featured .price-period { color: var(--text-muted); }
+.price-card.featured .pf-dot { background: var(--blue); }
+.price-card.featured .price-cta-solid { background: var(--blue); color: var(--white); }
+.price-card.featured .price-cta-solid:hover { background: var(--blue-dark); }
 
 /* ── WORK ── */
 .work-grid {
