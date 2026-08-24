@@ -44,7 +44,10 @@
     {"@type": "AdministrativeArea", "name": "Prince William County, VA"}
   ],
   "url": "https://covecraftdigital.com",
-  "sameAs": []
+  "sameAs": [
+    "https://www.youtube.com/@covecraftdigital",
+    "https://www.instagram.com/covecraft.digital/"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -634,6 +637,9 @@ footer {
   display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
 }
 .foot-copy { font-size:12px; color:var(--text-muted); }
+.foot-social { display:flex; gap:12px; margin-top:16px; }
+.foot-social a { color: var(--text-muted); transition: color 0.18s; }
+.foot-social a:hover { color: var(--blue); }
 
 @media(max-width:860px){
   .foot-grid { grid-template-columns:1fr 1fr; }
@@ -961,6 +967,14 @@ footer {
         <li><a href="mailto:covecraftdigital@gmail.com">covecraftdigital@gmail.com</a></li>
         <li style="color:var(--text-muted);">Herndon, VA</li>
       </ul>
+      <div class="foot-social">
+        <a href="https://www.youtube.com/@covecraftdigital" target="_blank" rel="noopener" aria-label="Covecraft Digital on YouTube">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M22 12s0-3.4-.43-5a2.78 2.78 0 0 0-2-2C17.9 4.5 12 4.5 12 4.5s-5.9 0-7.57.5a2.78 2.78 0 0 0-2 2C2 8.6 2 12 2 12s0 3.4.43 5a2.78 2.78 0 0 0 2 2C6.1 19.5 12 19.5 12 19.5s5.9 0 7.57-.5a2.78 2.78 0 0 0 2-2c.43-1.6.43-5 .43-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 9.5l5 2.5-5 2.5v-5z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.instagram.com/covecraft.digital/" target="_blank" rel="noopener" aria-label="Covecraft Digital on Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+        </a>
+      </div>
     </div>
   </div>
   <div class="foot-bottom">
