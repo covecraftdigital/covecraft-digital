@@ -36,6 +36,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://covecraftdigital.com/blog.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://covecraftdigital.com/web-design-reston-va.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -156,7 +161,22 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://covecraftdigital.com/blog.html</loc>
+    <loc>https://covecraftdigital.com/roofer-website-design-loudoun-county-va.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://covecraftdigital.com/hvac-website-design-loudoun-county-va.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://covecraftdigital.com/plumber-website-design-loudoun-county-va.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://covecraftdigital.com/landscaper-website-design-loudoun-county-va.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
