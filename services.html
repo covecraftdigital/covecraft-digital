@@ -345,6 +345,20 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 .calc-banner-btn { flex-shrink: 0; white-space: nowrap; }
 @media(max-width:720px){ .calc-banner-inner { flex-direction: column; align-items: flex-start; padding: 28px 24px; } .calc-banner-btn { width: 100%; text-align: center; } }
 
+/* ── PRICING GUARANTEES ── */
+.price-guarantee-main {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: var(--blue); color: var(--white);
+  border-radius: 8px; padding: 14px 16px;
+  font-size: 13.5px; font-weight: 600; line-height: 1.45;
+}
+.price-guarantee-main svg { flex-shrink: 0; margin-top: 1px; }
+.price-guarantee-small {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 12.5px; font-weight: 500; color: var(--text-muted);
+}
+.price-card.featured .price-guarantee-small { color: rgba(26,30,46,0.65); }
+
 </style>
 </head>
 <body>
@@ -385,7 +399,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 </div></div>
 <section class="section"><div class="container">
   <div class="services-list">
-    <div class="service-row sr"><div class="service-name">Custom website — 5 pages</div><div class="service-desc">Home, Services, About, Our Work, and Contact. Built for your trade, your service area, and the customer who finds you on Google.<span class="service-tag">24-48 hr build</span></div></div>
+    <div class="service-row sr"><div class="service-name">Custom website — 5 core pages</div><div class="service-desc">Home, Services, About, Our Work, and Contact — plus dedicated service-area pages for every city or town you serve. Built for the customer who finds you on Google.<span class="service-tag">24-48 hr build</span></div></div>
     <div class="service-row sr"><div class="service-name">Local SEO setup</div><div class="service-desc">Title tags, meta descriptions, heading structure, image alt text, schema markup, and keyword-optimized copy - all set up correctly from day one.<span class="service-tag">Built into every site</span></div></div>
     <div class="service-row sr"><div class="service-name">Google Business Profile</div><div class="service-desc">Managed monthly - posts three times a week, review responses within 24 hours, photo uploads, profile optimization.<span class="service-tag">Monthly management</span></div></div>
     <div class="service-row sr"><div class="service-name">Hosting &amp; domain</div><div class="service-desc">Fast, reliable hosting with SSL and full domain management.<span class="service-tag">Fully managed</span></div></div>
