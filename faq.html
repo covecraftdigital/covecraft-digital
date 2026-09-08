@@ -55,7 +55,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [{"@type":"Question","name":"How much does a website cost, and when do I actually pay?","acceptedAnswer":{"@type":"Answer","text":"You don't pay anything upfront. We build a full custom website for your business first, and you only pay if you decide to launch it. From there you can choose a one-time payment (around $998) or a $0-down monthly plan (around $297/mo). There's no cost to see your free preview."}},
-{"@type":"Question","name":"How long does it take to get my site live?","acceptedAnswer":{"@type":"Answer","text":"Your free preview is typically ready within 24-48 hours of filling out the contact form. Once you approve the design, your site goes live within 7 days."}},
+{"@type":"Question","name":"How long does it take to get my site live?","acceptedAnswer":{"@type":"Answer","text":"Your free preview is typically ready within 48 hours of filling out the contact form. Once you approve the design, your site goes live within 7 days."}},
 {"@type":"Question","name":"Will this actually help me show up on Google?","acceptedAnswer":{"@type":"Answer","text":"Every site we build includes local SEO from day one - correct title tags, meta descriptions, heading structure, schema markup, and location-specific content for your service area. That's the technical foundation ranking requires. Real rankings also depend on ongoing factors like Google Business Profile activity, reviews, and content freshness, which is why we offer monthly SEO management as part of our plans."}},
 {"@type":"Question","name":"Am I locked into a long-term contract?","acceptedAnswer":{"@type":"Answer","text":"No. Monthly plans can be canceled with 30 days' notice, no questions asked. If you choose the one-time payment option, you own the site outright with no ongoing obligation at all."}},
 {"@type":"Question","name":"Do you only work with contractors, or other local businesses too?","acceptedAnswer":{"@type":"Answer","text":"We specialize in contractors and trade businesses - roofing, HVAC, plumbing, electrical, painting, landscaping, and general contracting - across Prince William, Fairfax, and Loudoun County. We also limit ourselves to one business per trade in each local market, so you're never competing with a client of ours for the same search terms."}}]
@@ -356,6 +356,29 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 .calc-banner-btn { flex-shrink: 0; white-space: nowrap; }
 @media(max-width:720px){ .calc-banner-inner { flex-direction: column; align-items: flex-start; padding: 28px 24px; } .calc-banner-btn { width: 100%; text-align: center; } }
 
+/* ── PRICING GUARANTEES ── */
+.price-guarantee-main {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: var(--blue); color: var(--white);
+  border-radius: 8px; padding: 14px 16px;
+  font-size: 13.5px; font-weight: 600; line-height: 1.45;
+}
+.price-guarantee-main svg { flex-shrink: 0; margin-top: 1px; }
+.price-guarantee-small {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 12.5px; font-weight: 500; color: var(--text-muted);
+}
+.price-card.featured .price-guarantee-small { color: rgba(26,30,46,0.65); }
+
+.cta-guarantee-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+  color: var(--white); border-radius: 20px;
+  padding: 8px 16px; margin-bottom: 18px;
+  font-size: 12.5px; font-weight: 600;
+}
+.cta-guarantee-badge svg { flex-shrink: 0; color: var(--blue); }
+
 </style>
 </head>
 <body>
@@ -400,7 +423,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
       </div>
       <div class="faq-item">
         <button class="faq-q">How long does it take to get my site live? <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
-        <div class="faq-a"><p>Your free preview is typically ready within 24-48 hours of filling out the contact form. Once you approve the design, your site goes live within 7 days.</p></div>
+        <div class="faq-a"><p>Your free preview is typically ready within 48 hours of filling out the contact form. Once you approve the design, your site goes live within 7 days.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Will this actually help me show up on Google? <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>

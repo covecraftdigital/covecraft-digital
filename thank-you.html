@@ -345,6 +345,29 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 .calc-banner-btn { flex-shrink: 0; white-space: nowrap; }
 @media(max-width:720px){ .calc-banner-inner { flex-direction: column; align-items: flex-start; padding: 28px 24px; } .calc-banner-btn { width: 100%; text-align: center; } }
 
+/* ── PRICING GUARANTEES ── */
+.price-guarantee-main {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: var(--blue); color: var(--white);
+  border-radius: 8px; padding: 14px 16px;
+  font-size: 13.5px; font-weight: 600; line-height: 1.45;
+}
+.price-guarantee-main svg { flex-shrink: 0; margin-top: 1px; }
+.price-guarantee-small {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 12.5px; font-weight: 500; color: var(--text-muted);
+}
+.price-card.featured .price-guarantee-small { color: rgba(26,30,46,0.65); }
+
+.cta-guarantee-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+  color: var(--white); border-radius: 20px;
+  padding: 8px 16px; margin-bottom: 18px;
+  font-size: 12.5px; font-weight: 600;
+}
+.cta-guarantee-badge svg { flex-shrink: 0; color: var(--blue); }
+
 </style>
 </head>
 <body>
@@ -385,7 +408,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
     <p class="ty-body">We've received your information and we're already looking at it. We respond to every inquiry within 1 hour during business hours (Mon–Fri, 8am–6pm ET). Message us after hours and we'll get back to you first thing the next business day.</p>
     <div class="ty-steps"><ol style="padding-left:18px;">
       <li>We review your business, trade, and service area.</li>
-      <li>We build your full custom site preview — usually within 24 hours.</li>
+      <li>We build your full custom site preview — usually within 48 hours.</li>
       <li>We send it over and walk you through it. No payment required to see it.</li>
       <li>Once you approve, your site goes live within 7 days.</li>
     </ol></div>

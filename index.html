@@ -360,6 +360,15 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 }
 .price-card.featured .price-guarantee-small { color: rgba(26,30,46,0.65); }
 
+.cta-guarantee-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+  color: var(--white); border-radius: 20px;
+  padding: 8px 16px; margin-bottom: 18px;
+  font-size: 12.5px; font-weight: 600;
+}
+.cta-guarantee-badge svg { flex-shrink: 0; color: var(--blue); }
+
 </style>
 </head>
 <body>
@@ -407,7 +416,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
         </div>
       </div>
       <div class="hero-right-panel sr d2">
-        <div class="hero-panel-item"><div class="hero-panel-n">24hr</div><div class="hero-panel-l">Preview build time</div></div>
+        <div class="hero-panel-item"><div class="hero-panel-n">48hr</div><div class="hero-panel-l">Preview build time</div></div>
         <div class="hero-panel-divider"></div>
         <div class="hero-panel-item"><div class="hero-panel-n">1hr</div><div class="hero-panel-l">Avg. inquiry response</div></div>
         <div class="hero-panel-divider"></div>
@@ -441,7 +450,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
     </div>
     <div class="process-grid">
       <div class="process-card sr d1"><div class="process-big-n">1</div><div class="process-title">Tell us your business</div><div class="process-desc">Company name, trade, service area. Three minutes. No payment required.</div></div>
-      <div class="process-card sr d2"><div class="process-big-n">2</div><div class="process-title">We build your site</div><div class="process-desc">Full custom site in 24-48 hours. Your trade, your area, your brand. You see it before paying anything.</div></div>
+      <div class="process-card sr d2"><div class="process-big-n">2</div><div class="process-title">We build your site</div><div class="process-desc">Full custom site in 48 hours. Your trade, your area, your brand. You see it before paying anything.</div></div>
       <div class="process-card sr d3"><div class="process-big-n">3</div><div class="process-title">Approve and launch</div><div class="process-desc">10-minute walkthrough. You approve, and your site goes live within 7 days.</div></div>
     </div>
   </div>
@@ -450,7 +459,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 <div class="stats-band">
   <div class="container">
     <div class="stats-row">
-      <div class="stat-item sr d1"><div class="stat-n">24hr</div><div class="stat-l">Build turnaround</div></div>
+      <div class="stat-item sr d1"><div class="stat-n">48hr</div><div class="stat-l">Build turnaround</div></div>
       <div class="stat-sep"></div>
       <div class="stat-item sr d2"><div class="stat-n">$0</div><div class="stat-l">Cost to preview</div></div>
       <div class="stat-sep"></div>
@@ -470,7 +479,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
       <h2 class="section-title">Everything your online<br>presence needs.</h2>
     </div>
     <div class="icon-grid">
-      <div class="icon-card sr d1"><div class="icon-wrap"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false"><rect x="2" y="4" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M2 10h24" stroke="currentColor" stroke-width="1.4"/></svg></div><div class="icon-card-title">Custom Website</div><div class="icon-card-desc">5 core pages built for your trade, plus service-area pages for the towns you serve. Not a template.</div><span class="icon-tag">24-48 hr build</span></div>
+      <div class="icon-card sr d1"><div class="icon-wrap"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false"><rect x="2" y="4" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M2 10h24" stroke="currentColor" stroke-width="1.4"/></svg></div><div class="icon-card-title">Custom Website</div><div class="icon-card-desc">5 core pages built for your trade, plus service-area pages for the towns you serve. Not a template.</div><span class="icon-tag">48 hr build</span></div>
       <div class="icon-card sr d2"><div class="icon-wrap"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="1.6"/></svg></div><div class="icon-card-title">Local SEO</div><div class="icon-card-desc">Ranks in your county from day one. Built in, not bolted on.</div><span class="icon-tag">All plans</span></div>
       <div class="icon-card sr d3"><div class="icon-wrap"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false"><path d="M14 3C9 3 6 7 6 11c0 6 8 14 8 14s8-8 8-14c0-4-3-8-8-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div><div class="icon-card-title">Google Business Profile</div><div class="icon-card-desc">Weekly posts, review responses, map pack management.</div><span class="icon-tag">Monthly</span></div>
       <div class="icon-card sr d1"><div class="icon-wrap"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false"><rect x="3" y="6" width="22" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/></svg></div><div class="icon-card-title">Lead Notifications</div><div class="icon-card-desc">Every form fill goes straight to your email the moment it's submitted.</div><span class="icon-tag">Same minute</span></div>
@@ -564,20 +573,6 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
   </div>
 </section>
 
-<section class="section calc-banner">
-  <div class="container">
-    <div class="calc-banner-inner sr">
-      <div class="calc-banner-text">
-        <span class="section-header-label">Still on the fence?</span>
-        <h2 class="calc-banner-title">Find out what your website is costing you.</h2>
-        <p class="calc-banner-body">3 quick questions, 60 seconds — see the exact revenue you're leaving on the table without a real website and local SEO.</p>
-      </div>
-      <a class="btn-solid calc-banner-btn" href="https://covecraftdigital.github.io/covecraft-loss-calculator/" target="_blank" rel="noopener">See what it's costing you →</a>
-    </div>
-  </div>
-</section>
-
-
 <section class="section">
   <div class="container">
     <div class="section-header sr"><span class="section-header-label">Questions</span><h2 class="section-title">Frequently asked.</h2></div>
@@ -588,7 +583,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
       </div>
       <div class="faq-item">
         <button class="faq-q">How long does it take to get my site live? <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
-        <div class="faq-a"><p>Your free preview is typically ready within 24-48 hours of filling out the contact form. Once you approve the design, your site goes live within 7 days.</p></div>
+        <div class="faq-a"><p>Your free preview is typically ready within 48 hours of filling out the contact form. Once you approve the design, your site goes live within 7 days.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Will this actually help me show up on Google? <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
@@ -602,8 +597,12 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 <section class="cta-band">
   <div class="container">
     <div class="cta-band-inner sr">
+      <div class="cta-guarantee-badge">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><path d="M9 1.5L15 4.5v4.5c0 4-2.6 7-6 7.9-3.4-.9-6-3.9-6-7.9V4.5L9 1.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 9l1.8 1.8L12 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Page one on Google in 6 months, or we work free until you get there — monthly plan
+      </div>
       <h2 class="cta-band-title">See it before you believe it.</h2>
-      <p class="cta-band-sub">We build your site in 24 hours at no cost. If you want to launch it, we talk about next steps. If not, you owe nothing.</p>
+      <p class="cta-band-sub">We build your site in 48 hours at no cost. If you want to launch it, we talk about next steps. If not, you owe nothing.</p>
       <a class="btn-solid" href="contact.html">Get your free preview</a>
     </div>
   </div>

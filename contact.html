@@ -345,6 +345,29 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 .calc-banner-btn { flex-shrink: 0; white-space: nowrap; }
 @media(max-width:720px){ .calc-banner-inner { flex-direction: column; align-items: flex-start; padding: 28px 24px; } .calc-banner-btn { width: 100%; text-align: center; } }
 
+/* ── PRICING GUARANTEES ── */
+.price-guarantee-main {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: var(--blue); color: var(--white);
+  border-radius: 8px; padding: 14px 16px;
+  font-size: 13.5px; font-weight: 600; line-height: 1.45;
+}
+.price-guarantee-main svg { flex-shrink: 0; margin-top: 1px; }
+.price-guarantee-small {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 12.5px; font-weight: 500; color: var(--text-muted);
+}
+.price-card.featured .price-guarantee-small { color: rgba(26,30,46,0.65); }
+
+.cta-guarantee-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+  color: var(--white); border-radius: 20px;
+  padding: 8px 16px; margin-bottom: 18px;
+  font-size: 12.5px; font-weight: 600;
+}
+.cta-guarantee-badge svg { flex-shrink: 0; color: var(--blue); }
+
 </style>
 </head>
 <body>
@@ -380,7 +403,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 
 <div class="int-hero"><div class="container">
   <span class="int-hero-label">Get started</span>
-  <h1 class="int-hero-title">Get your free site preview in 24 hours.</h1>
+  <h1 class="int-hero-title">Get your free site preview in 48 hours.</h1>
   <p class="int-hero-sub">Fill this out and we'll build a full custom website for your business — free. No payment until you're ready to launch.</p>
 </div></div>
 <section class="section"><div class="container">
@@ -404,7 +427,7 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
         </div>
         <div class="form-field"><label class="form-label" for="f-message">Anything else</label><textarea id="f-message" name="message" placeholder="Current website if you have one, main services, anything specific you want included..."></textarea></div>
         <button class="form-submit" type="submit">Request my free preview</button>
-        <p class="form-note" id="form-status">No payment required. We'll have your preview ready within 24 hours, and we respond to every inquiry within 1 hour.</p>
+        <p class="form-note" id="form-status">No payment required. We'll have your preview ready within 48 hours, and we respond to every inquiry within 1 hour.</p>
       </form>
     </div>
   </div>
