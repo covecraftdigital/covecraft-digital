@@ -369,6 +369,24 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 }
 .cta-guarantee-badge svg { flex-shrink: 0; color: var(--blue); }
 
+.browser-mockup {
+  max-width: 900px; margin: 0 auto;
+  border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 40px rgba(20,24,41,0.12);
+}
+.browser-mockup-bar {
+  background: var(--gray-100); padding: 10px 14px;
+  display: flex; align-items: center; gap: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.browser-mockup-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gray-300); }
+.browser-mockup-url {
+  margin-left: 12px; font-size: 11px; color: var(--text-muted);
+  background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+  padding: 3px 10px;
+}
+.browser-mockup img { display: block; width: 100%; height: auto; }
 </style>
 </head>
 <body>
@@ -453,6 +471,24 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
       <div class="process-card sr d2"><div class="process-big-n">2</div><div class="process-title">We build your site</div><div class="process-desc">Full custom site in 48 hours. Your trade, your area, your brand. You see it before paying anything.</div></div>
       <div class="process-card sr d3"><div class="process-big-n">3</div><div class="process-title">Approve and launch</div><div class="process-desc">10-minute walkthrough. You approve, and your site goes live within 7 days.</div></div>
     </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header sr">
+      <span class="section-header-label">What "custom" actually looks like</span>
+      <h2 class="section-title">This is the kind of site we build.</h2>
+      <p class="section-sub">A mockup example, not a real client — but this is the real level of design and copy every preview starts from.</p>
+    </div>
+    <div class="browser-mockup sr">
+      <div class="browser-mockup-bar">
+        <span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span>
+        <span class="browser-mockup-url">yourbusiness.com</span>
+      </div>
+      <img src="assets/preview-mockup.jpg" alt="Example website mockup for a fictional contractor, DMV Contracting — not an actual client" loading="lazy">
+    </div>
+    <p style="margin-top:20px;font-size:12px;color:var(--text-muted);text-align:center;">"DMV Contracting" is a fictional example built to show our design standard — not an actual client site.</p>
   </div>
 </section>
 
@@ -553,22 +589,16 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="cta-band">
   <div class="container">
-    <div class="pain-grid">
-      <div class="pain-col pain-bad sr">
-        <div class="pain-label-bad">Without Covecraft</div>
-        <div class="pain-list">
-          <div class="pain-item">Page 2 or 3 on Google</div><div class="pain-item">Zero calls from your website</div><div class="pain-item">Competitors taking your leads</div><div class="pain-item">Sending people to a weak site</div><div class="pain-item">No Google Business Profile activity</div>
-        </div>
+    <div class="cta-band-inner sr">
+      <div class="cta-guarantee-badge">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><path d="M9 1.5L15 4.5v4.5c0 4-2.6 7-6 7.9-3.4-.9-6-3.9-6-7.9V4.5L9 1.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 9l1.8 1.8L12 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Page one on Google in 6 months, or we work free until you get there — monthly plan
       </div>
-      <div class="pain-divider"><div class="pain-vs">vs</div></div>
-      <div class="pain-col pain-good sr d1">
-        <div class="pain-label-good">With Covecraft</div>
-        <div class="pain-list">
-          <div class="pain-item-good">Page 1 in your county</div><div class="pain-item-good">Phone ringing from Google</div><div class="pain-item-good">Standing out in your market</div><div class="pain-item-good">Site that closes before you even pick up</div><div class="pain-item-good">Active GBP driving map pack leads</div>
-        </div>
-      </div>
+      <h2 class="cta-band-title">See it before you believe it.</h2>
+      <p class="cta-band-sub">We build your site in 48 hours at no cost. If you want to launch it, we talk about next steps. If not, you owe nothing.</p>
+      <a class="btn-solid" href="contact.html">Get your free preview</a>
     </div>
   </div>
 </section>
@@ -591,20 +621,6 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
       </div>
     </div>
     <p style="margin-top:24px;"><a class="btn-text" href="faq.html">See all FAQs →</a></p>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container">
-    <div class="cta-band-inner sr">
-      <div class="cta-guarantee-badge">
-        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><path d="M9 1.5L15 4.5v4.5c0 4-2.6 7-6 7.9-3.4-.9-6-3.9-6-7.9V4.5L9 1.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 9l1.8 1.8L12 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Page one on Google in 6 months, or we work free until you get there — monthly plan
-      </div>
-      <h2 class="cta-band-title">See it before you believe it.</h2>
-      <p class="cta-band-sub">We build your site in 48 hours at no cost. If you want to launch it, we talk about next steps. If not, you owe nothing.</p>
-      <a class="btn-solid" href="contact.html">Get your free preview</a>
-    </div>
   </div>
 </section>
 
