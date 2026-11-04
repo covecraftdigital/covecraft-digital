@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Covecraft Digital | Web Design for Contractors — Prince William, Fairfax & Loudoun County VA</title>
-<meta name="description" content="Covecraft Digital builds websites for contractors and trade businesses in Prince William, Fairfax, and Loudoun County, Virginia. Free custom preview before you pay anything.">
+<title>Contractor Web Design in Northern Virginia | Covecraft</title>
+<meta name="description" content="Contractor web design in Northern Virginia. Free custom preview before you pay, built in 48 hours. Serving Prince William, Fairfax &amp; Loudoun.">
 <meta name="keywords" content="web design contractors Virginia, contractor website Prince William County, Fairfax County web design, Loudoun County contractor website, web design Herndon VA">
 <meta name="geo.region" content="US-VA">
 <meta name="geo.placename" content="Herndon, VA">
@@ -13,14 +13,14 @@
 <link rel="icon" type="image/png" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Covecraft Digital | Web Design for Contractors — Prince William, Fairfax & Loudoun County VA">
-<meta property="og:description" content="Covecraft Digital builds websites for contractors and trade businesses in Prince William, Fairfax, and Loudoun County, Virginia. Free custom preview before you pay anything.">
+<meta property="og:title" content="Contractor Web Design in Northern Virginia | Covecraft">
+<meta property="og:description" content="Contractor web design in Northern Virginia. Free custom preview before you pay, built in 48 hours. Serving Prince William, Fairfax &amp; Loudoun.">
 <meta property="og:url" content="https://covecraftdigital.com/">
 <meta property="og:site_name" content="Covecraft Digital">
 <meta property="og:image" content="https://covecraftdigital.com/assets/logo.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Covecraft Digital | Web Design for Contractors — Prince William, Fairfax & Loudoun County VA">
-<meta name="twitter:description" content="Covecraft Digital builds websites for contractors and trade businesses in Prince William, Fairfax, and Loudoun County, Virginia. Free custom preview before you pay anything.">
+<meta name="twitter:title" content="Contractor Web Design in Northern Virginia | Covecraft">
+<meta name="twitter:description" content="Contractor web design in Northern Virginia. Free custom preview before you pay, built in 48 hours. Serving Prince William, Fairfax &amp; Loudoun.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -387,6 +387,13 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
   padding: 3px 10px;
 }
 .browser-mockup img { display: block; width: 100%; height: auto; }
+.mock-tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 auto 20px;}
+.mock-tab{font:inherit;font-size:14px;font-weight:600;padding:9px 18px;border-radius:999px;border:1px solid var(--border);background:var(--white);color:var(--text);cursor:pointer;}
+.mock-tab[aria-selected="true"]{background:#007FFF;border-color:#007FFF;color:#fff;}
+.mock-tab:hover{border-color:#007FFF;}
+.mock-hint{text-align:center;font-size:14px;font-weight:600;color:#007FFF;margin:0 0 10px;}
+.mock-cap{margin-top:16px;font-size:13px;color:var(--text-muted);text-align:center;}
+.mock-cap a{font-weight:600;}
 </style>
 </head>
 <body>
@@ -477,20 +484,19 @@ footer { background:var(--gray-50); border-top:1px solid var(--border); padding:
 <section class="section section-alt">
   <div class="container">
     <div class="section-header sr">
-      <span class="section-header-label">A real client site</span>
+      <span class="section-header-label">What "custom" actually looks like</span>
       <h2 class="section-title">This is the kind of site we build.</h2>
-      <p class="section-sub">Roger's Handyman Services, built from scratch: custom design, local copy and a quote form that sends leads straight to his phone.</p>
+      <p class="section-sub">One real client site, plus a concept design for each trade we serve. Click a trade below to see its site.</p>
     </div>
-    <div class="browser-mockup sr">
-      <div class="browser-mockup-bar">
-        <span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span>
-        <span class="browser-mockup-url">rogershandymanmd.com</span>
-      </div>
-      <img src="assets/rogers-handyman-hero.jpg" alt="Roger's Handyman Services homepage in Ellicott City, MD, built by Covecraft Digital" width="1400" height="732" loading="lazy">
-    </div>
-    <p style="margin-top:20px;font-size:14px;text-align:center;"><a href="https://rogershandymanmd.com" target="_blank" rel="noopener">Visit Roger's Handyman Services &rarr;</a></p>
+    <p class="mock-hint" id="mock-hint">See an example for your trade:</p><div class="mock-tabs" role="tablist" aria-label="Example websites"><button type="button" class="mock-tab" role="tab" id="tab-rogers" aria-controls="panel-rogers" aria-selected="true" data-tab="rogers">Roger's Handyman</button><button type="button" class="mock-tab" role="tab" id="tab-roofer" aria-controls="panel-roofer" aria-selected="false" data-tab="roofer">Roofing</button><button type="button" class="mock-tab" role="tab" id="tab-hvac" aria-controls="panel-hvac" aria-selected="false" data-tab="hvac">HVAC</button><button type="button" class="mock-tab" role="tab" id="tab-plumber" aria-controls="panel-plumber" aria-selected="false" data-tab="plumber">Plumbing</button><button type="button" class="mock-tab" role="tab" id="tab-landscaper" aria-controls="panel-landscaper" aria-selected="false" data-tab="landscaper">Landscaping</button></div>
+    <div id="panel-rogers" role="tabpanel" aria-labelledby="tab-rogers" data-panel="rogers"><div class="browser-mockup"><div class="browser-mockup-bar"><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-url">rogershandymanmd.com</span></div><img src="assets/rogers-handyman-hero.jpg" alt="Roger's Handyman Services homepage in Ellicott City, MD, built by Covecraft Digital" width="1400" height="747" loading="lazy"></div><p class="mock-cap"><a href="https://rogershandymanmd.com" target="_blank" rel="noopener">Visit Roger's Handyman Services &rarr;</a> — a real client site.</p></div>
+<div id="panel-roofer" role="tabpanel" aria-labelledby="tab-roofer" data-panel="roofer"><div class="browser-mockup"><div class="browser-mockup-bar"><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-url">yourbusiness.com</span></div><img src="assets/mockup-roofer.jpg" alt="Concept website design for a roofing company in Northern Virginia" width="1400" height="747" loading="lazy"></div><p class="mock-cap">Concept design for a roofing company — not a real business. <a href="contact.html">Get your own free preview &rarr;</a></p></div>
+<div id="panel-hvac" role="tabpanel" aria-labelledby="tab-hvac" data-panel="hvac"><div class="browser-mockup"><div class="browser-mockup-bar"><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-url">yourbusiness.com</span></div><img src="assets/mockup-hvac.jpg" alt="Concept website design for a HVAC company in Northern Virginia" width="1400" height="747" loading="lazy"></div><p class="mock-cap">Concept design for a HVAC company — not a real business. <a href="contact.html">Get your own free preview &rarr;</a></p></div>
+<div id="panel-plumber" role="tabpanel" aria-labelledby="tab-plumber" data-panel="plumber"><div class="browser-mockup"><div class="browser-mockup-bar"><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-url">yourbusiness.com</span></div><img src="assets/mockup-plumber.jpg" alt="Concept website design for a plumbing company in Northern Virginia" width="1400" height="747" loading="lazy"></div><p class="mock-cap">Concept design for a plumbing company — not a real business. <a href="contact.html">Get your own free preview &rarr;</a></p></div>
+<div id="panel-landscaper" role="tabpanel" aria-labelledby="tab-landscaper" data-panel="landscaper"><div class="browser-mockup"><div class="browser-mockup-bar"><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-dot"></span><span class="browser-mockup-url">yourbusiness.com</span></div><img src="assets/mockup-landscaper.jpg" alt="Concept website design for a landscaping company in Northern Virginia" width="1400" height="747" loading="lazy"></div><p class="mock-cap">Concept design for a landscaping company — not a real business. <a href="contact.html">Get your own free preview &rarr;</a></p></div>
   </div>
 </section>
+<script>(function(){var tabs=document.querySelectorAll('.mock-tab'),panels=document.querySelectorAll('[data-panel]');if(!tabs.length)return;function show(k){tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.tab===k?'true':'false');t.tabIndex=t.dataset.tab===k?0:-1;});panels.forEach(function(p){p.hidden=p.dataset.panel!==k;});}tabs.forEach(function(t,i){t.addEventListener('click',function(){show(t.dataset.tab);});t.addEventListener('keydown',function(e){var j=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:-1;if(j<0)return;j=(j+tabs.length)%tabs.length;tabs[j].focus();show(tabs[j].dataset.tab);e.preventDefault();});});show('rogers');})();</script>
 
 <div class="stats-band">
   <div class="container">
